@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.header {
+    font-size: 16px;
+    width: 100%;
+    height: 120px;
+    padding-top: 45px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .ul-start {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Home a, .Destinations a, .About a, .Partner a {
+    color: #B8BECD;
+    margin-left: 35px;
+}
+
+.Home a:hover, .Destinations a:hover,
+ .About a:hover, .Partner a:hover {
+    color: #202336;
+    font-weight: 500;
+}
+
+.Login a, .Register a {
+    color: #FB8F1D;
+    display: block;
+    width: 132px;
+    height: 44px;
+    border: 1px solid #FB8F1D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.Login a:hover, .Register a:hover {
+    color: white;
+    background-color: #FB8F1D;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.Explore-end-Travel {
+    margin-top: 200px;
+}
+
+.Explore-end-Travel-container {
+    display: flex;
+}
+
+.Explore-end-Travel-input-h1 {
+    width: 65%;
+}
+
+.Explore-end-Travel-input h1 {
+    font-size: 64px;
+}
+
+.Explore-end-Travel-input h5 {
+    margin-top: 75px;
+    margin-bottom: 70px;
+    font-size: 22px;
+}
+
+.Holiday-finder-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.Holiday-finder-input select {
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    border-color: #AFB0B9; 
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Explore {
+    margin-top: 50px;
+    width: 180px;
+    height: 52px;
+    color: #FB8F1D;
+    border-radius: 8px;
+}
+
+.Explore:hover {
+    color: white;
+    background-color: #FB8F1D;;
+}
+
+.Explore-end-Travel-image {
+    width: 100%;
+}
+
+.Explore-end-Travel-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.New-way-to-explore {
+    margin-top: 100px;
+}
+
+.New-way-to-explore-container {
+    display: flex;
+
+}
+
+.New-way-to-explore-image {
+    width: 100%;
+}
+
+.New-way-to-explore-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.New-way-to-explore-image {
+    margin-right: 100px;
+}
+
+.New-way-to-explore-text-h1 {
+    width: 100%;
+}
+
+.New-way-to-explore-text {
+    font-size: 36px;
+}
+
+.New-way-to-explore-text p {
+    margin-top: 15px;
+    font-size: 17px;
+    width: 100%;
+    color: #7D7987;
+}
+
+.Learn-more {
+    margin-top: 50px;
+    width: 180px;
+    height: 52px;
+    color: #FB8F1D;
+    border-radius: 8px;
+}
+
+.Learn-more:hover {
+    color: white;
+    background-color: #FB8F1D;
+}
+
+.Featured-destination-gallery {
+    margin-top: 100px;
+}
+
+.Featured-destination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.Featured-destination h1 {
+    font-size: 36px;
+}
+
+.Featured-destination .all {
+    font-size: 17px;
+    background-color: white;
+    border: none;
+    color: #FB8F1D;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 260px;
+    height: 300px;
+}
+
+.Featured-destination-img img {
+    width: 260px;
+    height: 300px;
+    border-radius: 6px;
+}
+
+.name-img {
+    width: 120px;
+    height: 55px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 6px;
+    padding-top: 14px;
+}
+
+.name-place {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name-country {
+    font-size: 17px;
+    color: gray;
+}
+
+.Guides {
+    margin-top: 100px;
+}
+
+.Guides-container {
+    display: flex;
+}
+
+.Guides-text {
+    margin-top: 150px;
+}
+
+.Guides-text-h1 {
+    font-size: 36px;
+} 
+
+.Guides-text p {
+    font-size: 17px;
+    color: #7D7987;
+    margin-top: 20px;
+}
+
+.Download {
+    margin-top: 50px;
+    width: 180px;
+    height: 52px;
+    color: #FB8F1D;
+    border-radius: 8px;
+}
+
+.Download:hover {
+    color: white;
+    background-color: #FB8F1D;
+}
+
+.Guides-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.Guides-image {
+    width: 100%;
+}
+
+.Tesimonials {
+    margin-top: 100px;
+}
+
+.Testimonials-text {
+    width: 50%;
+}
+
+.Testimonials-container {
+    display: flex;
+}
+
+.Testimonials-text h1 {
+    font-size: 36px;
+    margin-bottom: 145px;
+}
+
+.stars-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.stars-container img {
+    margin-right: 15px;
+}
+
+.Testimonials-text .person {
+    margin-top: 40px;
+}
+
+.Testimonials-text .name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.Testimonials-text .position {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.Testimonials-image img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    margin-left: 30%;
+}
+
+.Trending-stories-gallery {
+    margin-top: 100px;
+}
+
+.Trending-stories-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.Trending-stories-container h1 {
+    font-size: 36px;
+}
+
+.Trending-stories-container .all {
+    font-size: 17px;
+    background-color: white;
+    border: none;
+    color: #FB8F1D;
+    cursor: pointer;
+}
+
+.Trending-stories-gallery-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.Trending-stories-gallery-item {
+    width: 220px;
+}
+
+.Trending-stories-gallery-item img {
+    width: 220px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.Trending-stories-gallery-item {
+    margin-right: 10px;
+}
+
+.Trending-stories-gallery-item .name-text {
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.Trending-stories-gallery-item .descriptions-text {
+    color: #7D7987;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Trending-stories-gallery-item .Read-more {
+    color: #FB8F1D;
+}
+
+.Contacts {
+    margin-top: 100px;
+}
+
+.Contacts-container {
+    display: flex;
+    font-size: 18px;
+}
+
+.text-block {
+    width: 200px;
+    margin-top: 50px;
+    margin-right: 12%;
+    color: #848484;
+}
+
+.coppy-write {
+    margin-top: 25px;
+}
+
+.Contacts h1 {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.Contacts-Destinations {
+    width: 150px;
+    margin-right: 100px;
+}
+
+.Contacts-Shop {
+    width: 150px;
+    margin-right: 100px;
+}
+
+.Contacts-Interests {
+    width: 150px;
+}
+
+.Contacts ul li {
+    margin-bottom: 10px;
+}
+
+.Contacts ul li a {
+    color: #848484;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    margin-right: 30px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .Explore-end-Travel-container {
+        flex-wrap: wrap;
+    }
+    .Explore-end-Travel-image {
+        margin-top: 20px;
+    }
+
+    .New-way-to-explore-container {
+        flex-wrap: wrap;
+    }
+
+    .New-way-to-explore-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .Guides-container {
+        flex-wrap: wrap;;
+    }
+
+    .Guides-image {
+        margin-top: 20px;
+    }
+
+    .Testimonials-text h1 {
+        margin-bottom: 45px;
+    }
+
+    .Testimonials-container {
+        flex-wrap: wrap;
+    }
+
+    .Testimonials-image img {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .Trending-stories-gallery-container {
+        flex-wrap: wrap;
+    }
+
+    .Trending-stories-gallery-item {
+        margin-top: 25px;
+    }
+
+    .text-block {
+        margin-bottom: 20px;
+    }
+
+    .Contacts-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .ul-start {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        color: green;
+        cursor: pointer;
+    }
+
+    .header .ul-end {
+        display: block;
+        background-color: white;
+        border: 3px solid green;
+        border-radius: 8px;
+    }
+
+    .header .ul-end li {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    
+}
