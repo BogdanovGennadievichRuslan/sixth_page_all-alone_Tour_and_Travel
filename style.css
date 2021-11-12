@@ -72,6 +72,7 @@ body {
 
 .Explore-end-Travel-container {
     display: flex;
+    align-items: center;
 }
 
 .Explore-end-Travel-input-h1 {
@@ -91,7 +92,7 @@ body {
 .Holiday-finder-input {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    width: 55%;
 }
 
 .Holiday-finder-input select {
@@ -120,6 +121,7 @@ body {
 
 .Explore-end-Travel-image {
     width: 100%;
+    height: 100%;
 }
 
 .Explore-end-Travel-image img{
@@ -199,25 +201,34 @@ body {
     cursor: pointer;
 }
 
-.swiper {
-    width: 260px;
-    height: 300px;
+.Featured-destination-gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Featured-destination-img {
+    flex: 1 0 24%;
+    margin-bottom: 10px;
+}
+
+.Featured-destination-img:not(:last-child) {
+    margin-right: 10px;
 }
 
 .Featured-destination-img img {
-    width: 260px;
-    height: 300px;
-    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
 }
 
 .name-img {
     width: 120px;
     height: 55px;
     background-color: white;
-    position: absolute;
-    bottom: 0;
     border-top-right-radius: 6px;
-    padding-top: 14px;
+    position: relative;
+    bottom: 50px;
 }
 
 .name-place {
@@ -346,17 +357,18 @@ body {
 
 .Trending-stories-gallery-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
 }
 
 .Trending-stories-gallery-item {
-    width: 220px;
+    flex: 1 1 22%;
 }
 
 .Trending-stories-gallery-item img {
-    width: 220px;
-    height: 250px;
+    width: 100%;
+    height: 70%;
     border-radius: 8px;
 }
 
@@ -381,7 +393,9 @@ body {
 }
 
 .Contacts {
-    margin-top: 100px;
+    margin-top: 250px;
+    padding: 20px 0;
+    background-color: rgb(223, 220, 220);
 }
 
 .Contacts-container {
@@ -438,14 +452,26 @@ body {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 1310px) {
+    .Featured-destination-img {
+        flex: 1 1 49%;
+    }
 
+    .Featured-destination-img:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .Trending-stories-gallery-item {
+        flex: 1 1 47%;
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .Explore-end-Travel-container {
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
     .Explore-end-Travel-image {
-        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
     .New-way-to-explore-container {
@@ -490,9 +516,6 @@ body {
         margin-bottom: 20px;
     }
 
-    .Contacts-container {
-        flex-wrap: wrap;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -519,6 +542,21 @@ body {
         margin-bottom: 10px;
     }
 
+    .Featured-destination-img {
+            flex: 1 1 100%;
+        }     
+
+    .Featured-destination-img {
+        margin-right: 0;
+    }
+
+    .Trending-stories-gallery-item {
+        flex: 1 1 100%;
+    }
+
+    .Contacts-container {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 375px) {
