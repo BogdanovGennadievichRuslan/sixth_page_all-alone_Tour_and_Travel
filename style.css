@@ -519,6 +519,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        height: 50px;
+    }
+    
     .header .ul-start {
         display: none;
     }
